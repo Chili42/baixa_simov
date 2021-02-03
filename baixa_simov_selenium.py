@@ -60,7 +60,7 @@ try:
     browser.find_element_by_xpath('/html/body/form/table/tbody/tr[3]/td[2]/select/option[12]').click()
     browser.find_element_by_name('Image11').click()
     sleep(1)
-    browser.get('https://simov.caixa/sistema/asp/alienar/contratacao/cad/venda_online/movacontratacao_cad_cadastro_filtro.asp?QS_sModulo=Incluir&Id=2')
+    browser.get('[[endereco do simov]]')
 except:
     sleep(5)
     browser.switch_to.frame(1)
@@ -68,7 +68,7 @@ except:
     browser.find_element_by_xpath('/html/body/form/table/tbody/tr[3]/td[2]/select/option[12]').click()
     browser.find_element_by_name('Image11').click()
     sleep(1)
-    browser.get('https://simov.caixa/sistema/asp/alienar/contratacao/cad/venda_online/movacontratacao_cad_cadastro_filtro.asp?QS_sModulo=Incluir&Id=2')
+    browser.get('[[endereço do simov]]')
 
 
 # In[6]:
@@ -88,13 +88,13 @@ for bem in nubem:
         Alert(browser).dismiss()
         Alert(browser).accept()
     except:
-        browser.get('https://simov.caixa/index.asp')
+        browser.get('[[endereço do simov]]')
         sleep(3)
         browser.switch_to.frame(1)
         browser.switch_to.frame('frmMain')
         browser.find_element_by_xpath('/html/body/form/table/tbody/tr[3]/td[2]/select/option[12]').click()
         browser.find_element_by_name('Image11').click()
-        browser.get('https://simov.caixa/sistema/asp/alienar/contratacao/cad/venda_online/movacontratacao_cad_cadastro_filtro.asp?QS_sModulo=Incluir&Id=2')
+        browser.get('[[endereço simov]]')
         browser.find_element_by_id('txtNuBem').send_keys(bem)
         browser.find_element_by_name('Image15').click()
         sleep(1)
@@ -115,7 +115,7 @@ browser.switch_to.frame(1)
 browser.switch_to.frame('frmMain')
 browser.find_element_by_xpath('/html/body/form/table/tbody/tr[3]/td[2]/select/option[12]').click()
 browser.find_element_by_name('Image11').click()
-browser.get('https://simov.caixa/sistema/asp/alienar/contratacao/cad/venda_online/movacontratacao_cad_cadastro_filtro.asp?QS_sModulo=Incluir&Id=2')
+browser.get('[[endereço simov]]')
 browser.find_element_by_id('txtNuBem').send_keys(bem)
 browser.find_element_by_name('Image15').click()
 sleep(1)
